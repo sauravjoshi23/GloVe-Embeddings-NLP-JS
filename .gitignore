@@ -25,6 +25,7 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+*.zip
 MANIFEST
 
 # PyInstaller
@@ -134,5 +135,6 @@ package-lock.json
 dataset/
 __pycache__/
 node_modules/
+Glove_pre-trained_vectors/
 
 debug.txt
