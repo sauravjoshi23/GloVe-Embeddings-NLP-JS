@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GloVe-Embeddings-NLP-JS</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="navbar-header">
+                <h2 style="display: inline-block; text-align: center; margin-left: auto;"><a 
+                    href="https://github.com/sauravjoshi23/GloVe-Embeddings-NLP-JS"
+                        class="navbar-brand">
+                        GloVe-Embeddings-NLP-JS
+                    </a></h2>
+            </div>
+            <!-- Place this tag where you want the button to render. -->
+            <a class="github-button" href="https://github.com/sauravjoshi23/GloVe-Embeddings-NLP-JS" data-color-scheme="no-preference: dark_high_contrast; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star sauravjoshi23/GloVe-Embeddings-NLP-JS on GitHub">Star</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <form id="extraction-form">
+            <div class="form-group">
+                <h4 style="text-align: center">Extraction</h4>
+                <p style="text-align: center">Extraction of a GloVe vector of the given word</p>
+                <input name="extraction-name" type="text" class="form-control" id="extraction-input"
+                    placeholder="Enter a word">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary" id="extraction-button">Submit</button>
+            </div>
+        </form>
+        <br>
+
+        <div id="output1" class="text-center"></div>
+        <br>
+        <br>
+    </div>
+
+
+    <div class="container">
+        <form id="sim-form">
+            <div class="form-group">
+                <h4 style="text-align: center">Similarity</h4>
+                <p style="text-align: center">Computation of similarity of GloVe vectors of the given words</p>
+                <input name="sim1-name" type="text" class="form-control" id="sim1-input" placeholder="Enter a word">
+                <br>
+                <input name="sim2-name" type="text" class="form-control" id="sim2-input" placeholder="Enter a word">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary" id="sim-button">Submit</button>
+            </div>
+        </form>
+        <br>
+
+        <div id="output2" class="text-center"></div>
+        <br>
+        <br>
+    </div>
+
+    <div class="container">
+        <form id="wa-form">
+            <div class="form-group">
+                <h4 style="text-align: center">Word Analogy</h4>
+                <p style="text-align: center">Calculation of word analogies of GloVe vectors of the given words</p>
+                <input name="wa1-name" type="text" class="form-control" id="wa1-input" placeholder="Enter a word">
+                <br>
+                <input name="wa2-name" type="text" class="form-control" id="wa2-input" placeholder="Enter a word">
+                <br>
+                <input name="wa3-name" type="text" class="form-control" id="wa3-input" placeholder="Enter a word">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary" id="wa-button">Submit</button>
+            </div>
+        </form>
+        <br>
+
+        <div id="output3" class="text-center"></div>
+        <br>
+        <br>
+    </div>
+
+    <div class="container">
+        <form id="vis-form">
+            <div class="form-group">
+                <h4 style="text-align: center">Visual Representation</h4>
+                <p style="text-align: center">Visual representation of the GloVe vectors of the given words</p>
+                <input name="vis1-name" type="text" class="form-control" id="vis1-input" placeholder="Enter multiple spaced words">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary" id="vis-button">Submit</button>
+            </div>
+        </form>
+        <br>
+
+        <div id="output4" class="text-center"></div>
+        <br>
+        <br>
+    </div>
+
+
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/scripts.js"></script>
+
+</body>
+
+</html>
